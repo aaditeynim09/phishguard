@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loader = document.getElementById('loader');
 
     // API endpoint for the local Flask server
-    const API_ENDPOINT = 'http://127.0.0.1:5000/predict';
+    const API_ENDPOINT = 'https://phishguard-api-p12g.onrender.com';
 
     scanButton.addEventListener('click', () => {
         // Disable button and show loader
