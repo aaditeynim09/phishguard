@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhishGuard</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="header" style="display:flex; align-items:center; gap:10px;">
+        <img src="icon128.png" width="24" height="24" alt="PhishGuard Icon">
+        <h1 style="margin:0;">PhishGuard</h1>
+    </div>
+
+    <button id="scan-btn">Scan Current Page</button>
+
+    <div class="loader" id="loader"></div>
+
+    <div id="result" class="result-area">
+        <strong id="prediction-text"></strong><br>
+        <small id="risk-score-text"></small>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
