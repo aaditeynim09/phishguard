@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhishGuard</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="header">
+        <img src="icon128.png" width="24" height="24" alt="PhishGuard Icon">
+        <h1>PhishGuard</h1>
+    </div>
+
+    <button id="scan-btn">Scan Current Page</button>
+
+    <div class="loader" id="loader"></div>
+
+    <div id="result" class="result-area">
+        <strong id="prediction-text"></strong><br>
+        <small id="risk-score-text"></small>
+    </div>
+
+    <div id="triggers" style="display:none;">
+        <p class="triggers-title">⚠️ Why it was flagged:</p>
+        <ul id="triggers-list"></ul>
+    </div>
+
+    <div id="history-section">
+        <p class="history-title">🕘 Recent Scans</p>
+        <ul id="history-list"></ul>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
